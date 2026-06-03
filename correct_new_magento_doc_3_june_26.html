@@ -1,0 +1,799 @@
+Manish_Notes
+____________________Magento 2____________________
+
+To install the letest and fresh version of magento 2 
+
+1. First create the domain name in cpanel. ex(projectname).com
+
+2. on cpanle go option multiphp and select the our project url and set the php version requre 
+
+3. connect the putty and project path and run this command for composer
+
+chmod 550 composer.phar
+./composer.phar install
+composer global config http-basic.repo.magento.com f56fedb3c03f8c7797e718a0e1ff54d8 841919ac2718bceeac6d6339dc33bf65
+
+4. then we will install the magento code using this command.
+
+/opt/cpanel/ea-php81/root/bin/php -dmemory_limit=-1 composer.phar create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.4.7-p3
+
+5. run this command to setup thank you
+
+/opt/cpanel/ea-php82/root/bin/php -dmemory_limit=-1 bin/magento setup:install --base-url="https://siteprodirect.invinge.com/" --db-host="localhost" --db-name="invinge_siteprodirect" --db-user="invinge_siteprodirect" --db-password=siteprodirect123 --admin-firstname="admin" --admin-lastname="admin" --admin-email="dotesting143@gmail.com" --admin-user="allin_admin" --admin-password="admin123" --language="en_US" --currency="INR" --timezone="America/Chicago" --use-rewrites="1" --backend-frontname="admin"
+
+
+
+
+___________________Command____________________
+
+/opt/cpanel/ea-php81/root/bin/php -dmemory_limit=-1 bin/magento s:up
+/opt/cpanel/ea-php81/root/bin/php -dmemory_limit=-1 bin/magento s:d:c
+/opt/cpanel/ea-php81/root/bin/php -dmemory_limit=-1 bin/magento s:s:d -f
+/opt/cpanel/ea-php81/root/bin/php -dmemory_limit=-1 bin/magento c:c
+/opt/cpanel/ea-php82/root/bin/php -dmemory_limit=-1 bin/magento c:f
+/opt/cpanel/ea-php82/root/bin/php bin/magento c:f
+
+
+/opt/plesk/php/8.1/bin/php
+
+
+/opt/cpanel/ea-php83/root/usr/bin/php
+
+
+
+_______________________to create the file and folder_______
+
+Create a Folder:- mkdir myfolder
+Create a File Inside That Folder:- touch myfolder/index.php
+Edit the File:-  vi myfolder/index.php
+
+Then:
+Press i to start inserting.
+Add some PHP code, like:
+
+
+<?php echo "Hello, world!"; ?>
+Press Esc, then type :wq and hit Enter to save and exit.
+
+
+
+____________________Zip folder:-____________________
+
+zip -r app.zip Ebizmarts
+unzip var.zip
+
+___________________Export the csv__________________
+
+php bin/magento queue:consumers:start exportProcessor
+
+_____________________Dotesting:-___________________
+
+dotesting143@gmail.com
+Allin@2021
+
+____________________Ubantu connect ssh_____________
+
+ssh wwwthewebarc@143.110.189.123
+
+
+_____________________Google sheet _________________
+
+
+If data in Column A matches Column B, show the matching/correct data in Column C.
+
+=IF(COUNTIF(B:B, A2)>0, A2, "")
+
+| A      | B      | C      |
+| ------ | ------ | ------ |
+| Apple  | Mango  | Apple  |
+| Orange | Apple  |        |
+| Banana | Banana | Banana |
+
+
+This formula apply to if column b data match with a then give the data in c column 
+=IF(ISNUMBER(VLOOKUP(A:A, C:C, 1, FALSE)), B:B, "")
+
+Add the two column in one column
+=B2 & "@volvo"
+= "https://allinexporters.myshopify.com/" & C2
+
+Match the two column data in sheet column b data is match with d then Yes otherwise give no
+=IF(ISNUMBER(MATCH(B1,D:D,0)),"Yes","No")
+
+=IF(ISNUMBER(MATCH(A2,B:B,0)),"Yes","No")
+
+=B2 & " by Maze | Style Our Home"
+=B2 & " by Classic Furniture | Style Our Home"
+
+
+=ROUND(Q2 * 1.9)
+
+=B2 & " by Malini | Style Our Home"
+
+This code is working on if column "C" data match with the column "A" give the data "B"
+=IFERROR(VLOOKUP(C2, A:B, 2, FALSE), "")
+
+This formula is working if the data of column "A" and "b" is not match then give not match data 
+=FILTER(A:A, ISERROR(MATCH(A:A, B:B, 0)))
+
+HiccupZestsAhemReeve
+
+df -h 
+
+top
+
+
+____________________google recaptcha_______________________
+
+
+https://www.google.com/recaptcha/admin/create
+
+---------------------------------------menu-------------------------
+
+menu related issue solve to go in vendor dir magento theme and layout default.xml ttl copy in our local theme 
+
+________________________Trello_______________________
+
+trello.com
+u- info@invinge.com
+p- invinge@1234
+
+________________________HRM_______________________
+
+https://hr.demospro.info/symfony/web/index.php/auth/login
+User:  allin.manish
+Password: 123456
+
+Trello links MAIN:
+
+SOH & K&S:-
+https://trello.com/b/cVMXVjIO/invinge  
+https://trello.com/b/sGY1NAmv/soh-development  
+https://trello.com/b/idY9wFgf/kartar-seibo   
+https://trello.com/b/R84CkTVF/product-upload 
+
+
+_______________________ASANA____________________
+
+
+ASANA LOGIN CREDENTIALS:
+u: allin.naveenkumartwa@gmail.com
+p: Admin@123
+
+
+____________________mode______________
+
+php bin/magento deploy:mode:show
+php bin/magento deploy:mode:set developer
+php bin/magento deploy:mode:set production
+php bin/magento deploy:mode:set default
+ 
+
+_______________Commond line in magento ______________
+
+
+*/30 * * * * /opt/plesk/php/8.1/bin/php /var/www/vhosts/reikicrystalproducts.com/httpdocs/bin/magento indexer:reindex
+
+
+*/30 * * * * /home/1449944.cloudwaysapps.com/bwfdcagksu/public_html/bin/magento indexer:reindex
+
+crontab
+
+php bin/magento cron:install --force
+
+_______________Cron Tab ______________
+Update/Edit cron
+1. crontab -l  //for display
+2. crontab -e and click i to insert 
+3. make changes 
+4. click esc then :wq! and press enter to save
+
+php bin/magento deploy:mode:show
+
+rm -rf var/page_cache/* var/cache/* var/view_preprocessed/* pub/static/*
+php bin/magento s:s:d -f 
+
+0 */6 * * * /opt/cpanel/ea-php83/root/usr/bin/php /home/allextreme/allin/bin/magento indexer:reindex
+
+           
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy -f
+php bin/magento indexer:reindex
+php bin/magento c:f   
+php bin/magento c:c 
+php bin/magento indexer:status 
+php bin/magento s:s:d -f             
+du -h -s *                          // check size file 
+du -sch                             // Check Size Of File With Particular Name 
+
+zip -r FilesBkpExclMedia_20oldJan25.zip * -x *.zip -x *.sql -x pub/media/**\*  backup all file without pub media
+
+
+zip -r engrosservice_29dec25.zip * -x *.zip -x *.sql -x pub/media/**\*
+
+
+zip -r mckeeversdirect06mar.zip * -x *.zip -x *.sql -x pub/media/**\* -x oldsite17/**\*
+
+
+
+
+zip -r lightmi1_m228livedb19jun.zip * -x *.zip -x *.sql -x pub/media/**\*
+
+
+zip -r Lm_dev_17dec2025.zip * -x *.zip -x *.sql -x pub/media/**\*
+
+
+
+
+zip -r abbeyseals_wp21mar2025invinge.zip * -x "*.zip" -x "*.sql" -x "pub/media/**\*" -x "__old25/**" -x "__old25"
+
+
+
+php bin/magento maintenance:enable --ip=122.176.150.70
+
+
+
+mysqldump -u YourUser -p YourDatabaseName > abbeyseals21mar2025.sql  //file export
+
+
+mysqldump -u walshengineering -p walshengineering > wal23jul28.sql      //file export
+
+mysqldump -u engrosservice_engros -p engrosservice_engros > engrosservice_dev29dec.sql      //file export
+
+
+
+mysqldump -u full -p full > fob_dev25jul25.sql      //file export
+
+-------------------------------------------------------------------------
+mysql -u USERNAME -p DATABASE < backup.sql               -------------IMPORT ONLY
+
+mysql -u ctexwsqkzg -p ctexwsqkzg < wal23jul28.sql               -------------IMPORT ONLY
+
+
+
+
+
+wget https://mgup.lightmirrors.co.uk/Lm_dev_17dec2025.zip
+
+mysql -u amsmot6_devmr -p amsmot6_devmr < millionaireracing05_jun.zip.sql
+
+
+Train login
+
+Man12345678i
+Anshika@2023
+
+
+Wave Fury
+
+cart
+6529-1600-0548-8862
+
+php bin/magento module:status     check enable and disable extension
+
+
+
+
+      // file export
+
+
+rm -rf  and file name
+
+_______________________ Hints _________________________
+
+?templatehints=magento
+        
+______________________ Print_r _________________________
+echo "<pre>";
+    print_r($data);
+    die;
+   
+______________________ Teamwork ______________________
+TeamWork : -
+user : allin.naveenkumartwa@gmail.com
+pass : naveen@123
+_________________________ Block _______________________
+
+call the block in phtml file 
+
+    <?php
+        if($_product->getAssignFrames()){
+             echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('frame_samples')->toHtml();
+         }
+    ?>
+
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+        <referenceContainer name="content">
+            <block class="Magento\Cms\Block\Block" name="test_new">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">test_new</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+</page>    
+
+_____________________ Sticky_header _____________________
+
+Path Theme/Magento_Theme/templates/html
+<script>
+require(['jquery'], function($) {
+    $(document).ready(function(){
+        $('body.cms-home, .catalog-category-view').addClass('stick-header-home');
+        var viewportWidth = $(window).width();
+        if (viewportWidth < 768) {
+            var s = $("#html-body");
+            $(window).scroll(function() {
+                var windowpos = $(window).scrollTop();
+                if (windowpos > 0) {
+                    s.removeClass("stick-header-home").addClass("sticky_header");
+                } else {
+                    s.removeClass("sticky_header").addClass("stick-header-home");
+                }
+            });
+        }
+    });
+});
+</script>
+___________________________Delete________________________________
+
+rm -rf file name
+___________________________var/cache_____________________________
+
+
+
+php bin/magento s:s:d -f en_US en_GB
+
+rm -rf var/cache/* pub/static/*
+
+__________________git command_____________________
+
+git add app/code/MostWanted/StoreviewSwitcher/view/frontend/web/images/flags/se.png         --> Changes file name comma not accept space only
+
+git commit -m "upload flag for sweden"                                                      --> releted the task name under the branch 
+
+git push origin PDF-design-update                                                           --> branch name 
+
+__________________Change admin password__________________
+
+php bin/magento admin:user:create --admin-user=admin123 --admin-password=admin@123 --admin-email=admin123@gmail.com --admin-firstname=admin --admin-lastname=admin
+
+php bin/magento admin:user:create --admin-user=Reiki_Crystal_Products --admin-password=Reiki@$HP34 --admin-email=dotesting143@gmail.com --admin-firstname=admin --admin-lastname=admin
+
+________________________ VPN ____________________________
+
+Use perimeter81 VPN before starting the task
+https://powerfulvision.perimeter81.com/sign-in?redirectUrl=perimeter81://perimeter81.com/callback
+u- m
+p- Twa@12345
+
+
+Termius password
+
+Manish_Megento
+
+_____________________ elasticsearch ____________________________
+
+systemctl status elasticsearch
+
+systemctl status opensearch
+_______________________ Base url ______________________________
+
+<a href="{{store url='offers.html'}}">Offers</a>
+
+<img class="" src="<?php echo $block->getBaseUrl().'media/wysiwyg/Shopbag.png'; ?>">
+
+<img class="" src="{{media url=&quot;.renditions/wysiwyg/blog/final2.jpg&quot;}}" alt="" />
+
+_____________________plugin____________________________________
+
+Types of Plugins in Magento2
+In Magento2 we can create and use three types of Plugin.
+
+Before listener Plugin
+After listener Plugin
+Around listener Plugin
+
+1. Before Listener
+Before listeners are used whenever we want to change the arguments of an original method or want to add some behavior before an original method is called.
+
+We will use before listeners to change the behavior of the addProduct method of Magento\Checkout\Model\Cart.
+
+This method is called whenever we add a product to cart.
+
+Original Method is
+public function addProduct($productInfo, $requestInfo = null)
+
+To use Plugins first of all we have to define it in di.xml.
+
+20200
+
+
+
+
+______________________vpn________________
+https://account.vyprvpn.com/oidc/interaction/35XcV9HCk6x-CJKJIrRmV
+user:- info@thedigitaldepartment.ie
+pass:- tdd1234567
+
+_______________________Upgrade magento version_____________________
+
+composer require magento/product-community-edition=2.4.7
+
+composer require magento/product-community-edition 2.4.7-p3 --no-update 
+composer update --ignore-platform-reqs
+
+COMPOSER_MEMORY_LIMIT=-1 ./composer.phar require magento/product-community-edition 2.4.7 --no-update
+
+
+./composer.phar require magento/product-community-edition 2.4.6-p9 --no-update 
+composer require magento/product-community-edition 2.4.7-p4 --no-update 
+./composer.phar update --ignore-platform-reqs
+
+composer update --ignore-platform-reqs
+
+
+ composer require paypal/module-ppcp
+
+
+./composer.phar config repositories.ebizmarts composer https://packages.ebizmarts.com
+./composer.phar config http-basic.gitlab.ebizmarts.com token FMkvnWJ6ZkC67t9zN51V
+./composer.phar config http-basic.brippo.gitlab.ebizmarts.com token FMkvnWJ6ZkC67t9zN51V
+./composer.phar config http-basic.sagepay.gitlab.ebizmarts.com token FMkvnWJ6ZkC67t9zN51V
+./composer.phar require ebizmarts/sagepaysuite
+
+
+
+./composer.phar config repositories.ebizmarts composer https://packages.ebizmarts.com
+./composer.phar config http-basic.gitlab.ebizmarts.com token FMkvnWJ6ZkC67t9zN51V
+./composer.phar config http-basic.brippo.gitlab.ebizmarts.com token FMkvnWJ6ZkC67t9zN51V
+./composer.phar config http-basic.sagepay.gitlab.ebizmarts.com token FMkvnWJ6ZkC67t9zN51V
+./composer.phar require ebizmarts/sagepaysuite
+
+
+____________ Change the customer password from database ___________
+
+UPDATE `customer_entity`
+SET `password_hash` = CONCAT(SHA2('xxxxxxxxYOURPASSWORD', 256), ':xxxxxxxx:1')
+WHERE `entity_id` = 1;
+
+Hash password of Allin@4321
+
+40d22f52e10f953a5c663fcb208d420943c1fbcf5a6253c311eee0c4a9a6f5de:xHP9PB89EU4rvtJSeZIl60yIsNQkRfoI:3_32_2_67108864
+
+40d22f52e10f953a5c663fcb208d420943c1fbcf5a6253c311eee0c4a9a6f5de:xHP9PB89EU4rvtJSeZIl60yIsNQkRfoI:3_32_2_67108864
+
+
+$wp$2y$12$eU/bwnMQ5dL0JgpSI.OMUun2orXU61Rel0S.4lKv9Chx0dOTjiiTK
+
+
+_______________________demo address______________________
+Usa:-
+
+Street:  1406 Oxford Court
+City:  Jackson
+State/province/area:   Mississippi
+Phone number:  662-296-0529
+Zip code:  39201
+Country calling code:  +1
+Country:  United States
+
+Uk:-
+
+Street:  7 Wenlock Terrace
+City:  Persey
+Phone number:  070 2857 1325
+Zip code:  PH10 9WW
+Country calling code:  +44
+Country:  United Kingdom
+
+ind:-
+
+Street:  A/102, Maitri Residency Ii, Behind Kamla Vihar,borsapada, Kandivali (west)
+City:   Mumbai
+State/province/area:    Maharashtra
+Phone number:  02228623563
+Zip code:  400067
+Country calling code:  +91
+Country:  India
+
+canada:-
+
+Street:  4440 Balmy Beach Road
+City:  Owen Sound
+State/province/area:   Ontario
+Phone number:  519-378-7630
+Zip code:  N4K 2N7
+Country calling code:  +1
+Country:  Canada
+______________________Leave application___________________
+
+
+
+So please give me a leave to go home (Ghazipur) on the occasion of Maha Shivaratri and Girha Pravesh.So please give me a leave on [8/03/2024], [11/03/2024], [12/03/2024] three days.
+
+I have to go home (Ghazipur) on the occasion of Maha Shivaratri and Girha Pravesh.So please give me a leave on [8/03/2024], [11/03/2024], [12/03/2024] three days.
+
+I would like to request you to please give me a restricted leave on [8/03/2024] for this Maha Shivaratri. a I have to go home (ghazipur).So please allow me [11/03/2024] to [12/03/2024] two days leave.
+
+I would like to request you to please give me a  leave of two days [19/04/2024] and [22/04/2024] for my cousin brother's wedding ceremony. and please give short leave of two hrs on [18/04/2024]
+
+
+I would like to request a short leave of two hours today, 18 jul 2025, due to some important personal work—I need to receive my brother from the railway station.
+
+I would like to request you to please give me a short leave of two hours on today [03 jun 2025] to some importent work to recive the famil member.
+
+I would like to request you to please give me a short leave of one hour today, 12th December 2024, as I need to receive someone from the (Amand vihar railway station).
+
+Thank You
+
+I have to go home(Ghaipur) today. So please, allow me short leave for 2 hours.
+leaving time 5:00.
+
+I would like to request you to please give me a restricted  leave on [27/11/2023]  for this Guru Nanak Jayanti.
+
+I would like to request you to please give me half day's leave today i am not feeling well [21/2/2024]
+
+
+Today I am taking a half day leave  due to unforeseen circumstances, I encountered a significant delay in my train commute this morning. As a result, I am running late and anticipate 
+
+I am experiencing a significant delay in my train commute this morning, which has resulted in me running late. Due to these  I would like to  half a day of leave for today.[16-11-2023]
+
+I would like to request a leave of absence for four days as my cousin's sister is getting married. between [11-12-2023] and [14-12-2023].
+
+
+I request to leave on the occasion of Makar Sankranti, which falls on [15/01/2024]. I would like to take a day off to celebrate.
+
+I would like to request you to please give me a one day  leave on [26/05/2025]. i am go katra jamu.
+
+
+I am writing to request leave from February 5th to 7th to attend my friend's wedding. I would greatly appreciate your approval for these three days off to participate in the celebrations.
+
+Please ignore this leave request for February 5th to 7th, as I have postponed my plans.
+
+
+I would like to request leave for February 17th, 18th, and 19th to visit home. I kindly request your approval for these three days off.
+
+Additionally, I would like to request a short leave of 2 hours on April 11 to catch my train.
+
+Thank you for considering my requests. I look forward to your positive response.
+
+
+Subject: Leave Application for 14th, 17th & 18th April and Work from Home on 15th & 16th April
+
+Dear [Manager's Name],
+
+I hope you are doing well. I would like to formally request leave on 14th, 17th, and 18th April as I will be attending my cousin brother’s wedding. Additionally, I would like to work from home on 15th and 16th April to manage some commitments while ensuring that my work remains unaffected.
+
+I will make sure all my tasks are up to date before my leave and will be available for any urgent matters during my WFH days. Please let me know if any additional information or handover is required.
+
+I will make sure all my tasks are up to date before my leave and will be available for any urgent matters during my WFH
+
+Hello Sir,maam 
+
+My name is manish yadav and i am from ghazipur near by vanarasi utter pardesh currently leave in delhi where purcing my carire on backend devloper focuse on e-commarce solutions
+
+I holded the bca and mca dgree which have provided me with technical foundation and analytial skills.
+
+currently working in allin info system pvt ltd loceted in noida sector 6.
+
+i have a two years of experance in magento backend developer where handal the logic and funcationaly 
+
+Thank you for your understanding and support.
+
+Best regards,
+[Your Name]
+
+Best regards,
+[Your Full Name]
+[Your Job Title]
+
+
+
+Subject: Leave Application for 14th, 17th & 18th April and Work from Home on 15th & 16th April (Cousin’s Wedding)
+
+Dear Sir/ma`am,
+
+I hope you are doing well. I would like to formally request leave on the 14th, 17th, and 18th of April as I will be attending my cousin’s wedding. Additionally, I would like to work from home on the 15th and 16th of April.
+
+I will make sure all my tasks are up to date before my leave and will be available for any urgent matters during my WFH days. Please let me know if any additional information or handover is required.
+
+Thank you for your understanding and
+
+
+Subject: Leave Application for 11th to 14th August
+
+Dear Sir/ma`am,
+
+I would like to request leave for four days, from 11th August to 14th August, as I am experiencing some dental issues. I may need to get a tooth extracted or treated, and I am also experiencing swelling and pain, which may make it difficult for me to come to the office during this time.
+
+Kindly grant me leave for these days. I shall be grateful for your understanding.
+
+Thank you.
+
+
+_________________find command -----------
+
+find app/design/frontend/Kartarandseibo/Theme -type f -name '_theme.less'
+find app/code -type f -name 'owl.carousel.min.js'
+
+find app/code -type f -name 'jquery.mobile.custom.js'
+
+mysqldump -u wwwthewebarc_magicencarta -p wwwthewebarc_magicencarta > wwwthewebarc_magicencarta.sql
+
+
+composer require magefan/module-google-tag-manager-plus --ignore-platform-reqs
+
+
+
+composer remove magefan/module-google-tag-manager-plus --ignore-platform-reqs
+
+composer require magefan/module-google-tag-manager-plus ^2.5.0
+
+
+if($_SERVER["REMOTE_ADDR"]=='119.82.68.254'){
+    // echo "<pre>";
+    // print_r($request);
+    // die;
+}
+
+if($_SERVER["REMOTE_ADDR"]=='119.82.68.254'){
+            echo "<pre>";
+            print_r($post);
+            die;
+        }
+
+
+
+* 1 * * * * /opt/cpanel/ea-php81/root/bin/php -dmemory_limit=-1 /home/invinge/hacer.in/bin/magento indexer:reindex
+
+* 1 * * * /opt/plesk/php/8.1/bin/php /var/www/vhosts/bathroom-cabinet-world.co.uk/httpdocs/bin/magento indexer:reindex
+
+
+################################################################################
+
+
+__________________Maintenance Mode______________
+
+php bin/magento maintenance:disable
+
+php bin/magento maintenance:enable --ip=178.62.86.202
+
+
+Enable maintenance mode 178.62.86.202
+
+mode
+
+
+
+-dmemory_limit=-1  memmory limit
+
+
+rm -rf pub/static/*; 
+rm -rf var/view_preprocessed/*;
+rm -rf generated/*;
+
+
+
+rm -rf var/page_cache/* var/cache/* var/view_preprocessed/* pub/static/*
+rm -rf generated/code/ generated/metadata/* var/page_cache/* var/view_preprocessed/* var/cache/*
+
+./composer.phar update amasty/base
+
+./composer.phar require amasty/module-banner-slider
+
+./composer.phar require reviewscouk/reviews
+
+./composer.phar require amasty/module-out-of-stock-notification-subscription-package
+
+./composer.phar require zf1/zend-reflection
+
+./composer.phar update stripe/stripe-payments:4.0.0 --with-all-dependencies
+
+./composer.phar update stripe/stripe-payments:4.0.0 --with-all-dependencies
+
+./composer.phar update amasty/product-attachment-lite
+
+./composer.phar require terrific-minds/customeractivation --with-all-dependencies
+
+./composer.phar update magento/module-layered-navigation-pro:3.1.0 --with-all-dependencies
+
+./composer.phar require doofinder/doofinder-magento2
+
+./composer.phar update doofinder/doofinder-magento2
+
+./composer.phar requires codedrop/checkout-message
+
+./composer.phar require laminas/laminas-code
+
+./composer.phar show zendframework/zend-json
+
+./composer.phar require laminas/laminas-config --ignore-platform-reqs
+
+
+./composer.phar require laminas/laminas-code
+
+./composer.phar config repositories.amasty composer https://composer.amasty.com/community/
+./composer.phar config --auth http-basic.composer.amasty.com $8acaf877cd41fd7be059dd4f20110acd $416038a7e774279ed43be5d5ce1769bc
+
+
+
+
+
+
+
+php bin/magento s:up
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy -f 
+php bin/magento indexer:reindex
+php bin/magento c:f
+
+
+
+
+rm -rf var/page_cache/* var/cache/* var/view_preprocessed/* pub/static/*
+
+composer require phpoffice/phpword --ignore-platform-reqs
+
+composer require tecnickcom/tcpdf --ignore-platform-reqs
+
+
+
+
+_____________________Change the admin user and password_______________
+
+
+php bin/magento admin:user:create --admin-user=admin_new_n --admin-password=HmJY@3Nh4#@#5555 --admin-email=allin.manishyadav@gmail.com --admin-firstname=admin --admin-lastname=user
+
+
+_____________________clear the cache_____________________________
+
+
+rm -rf var/page_cache/* var/cache/* var/view_preprocessed/* pub/static/*
+
+
+
+./composer.phar require algolia/algoliasearch-magento-2
+php bin/magento module:enable Algolia_AlgoliaSearch
+php bin/magento setup:upgrade
+php bin/magento setup:static-content:deploy
+
+
+
+-----------------------------
+Code editor subline :- "C:\Program Files (x86)\Sublime Text 3\sublime_text.exe"
+
+"C:\Users\Allin\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+---------------------------
+
+
+
+
+
+
+composer require magento/product-community-edition 2.4.7-p3 --no-update 
+composer update --ignore-platform-reqs
+
+
+https://www.hacer.in/
+https://www.zureni.com/
+https://www.pivalo.com/
+https://www.allinexporters.com/
+https://www.allextreme.in/
+https://www.oriley.in/
+http://www.casago.in/
+http://www.biroller.com/
+https://www.ladista.com/ 
+https://www.motopack.co.in/ 
+https://www.ecomwithabhinav.com/
+
+
+./composer.phar require magento/product-community-edition 2.4.8-p3 --no-update
